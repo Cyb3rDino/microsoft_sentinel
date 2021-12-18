@@ -1,1 +1,3 @@
-## Azure Sentinel Workbooks
+# Azure Sentinel Workbooks
+## Meta Information
+## Deployment Guide
