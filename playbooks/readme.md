@@ -1,4 +1,4 @@
-# Azure Sentinel Playbooks
+# Microsoft Sentinel - Playbooks
 --
 ## Usefull Documentations
 
