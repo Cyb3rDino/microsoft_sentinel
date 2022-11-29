@@ -1,0 +1,7 @@
+CommonSecurityLog
+| where TimeGenerated > ago(32d)
+| summarize last_log = datetime_diff("second", now(), max(TimeGenerated))  by _ResourceId, Computer, ReceivedBytes, bin(TimeGenerated,1d)
+| summarize MonthlyAmount = sum(ReceivedBytes) by Computer, TimeGenerated
+| extend MonthlyGB = format_bytes(MonthlyAmount, 0)
+//| where Computer has "LOGSOURCE"
+| order by TimeGenerated desc 
