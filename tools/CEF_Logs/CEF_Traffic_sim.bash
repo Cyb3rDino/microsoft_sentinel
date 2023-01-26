@@ -13,6 +13,6 @@ t=$(date "+%T")
 while [ $i -le $b ]
 do
   echo Message Number: $i was send.
-  logger -p $f -P 514 -n 127.0.0.1 --rfc3164 -t CEF "0|Mock-test2|TRAFFIC-Simulator|common=event-format-test number$i SystemTime $t|end|TRAF>  ((i++))
+  logger -p $f -P 514 -n 127.0.0.1 --rfc3164 -t CEF "0|Mock-test$fa|TRAFFIC-Simulator|common=event-format-test number$i SystemTime $t|end|TRAF>  ((i++))
   sleep 10
 done
