@@ -36,7 +36,7 @@ else
    done
 fi
 
-#while Loop for sendind CEF Entries
+#while Loop for sendind Syslog Entries
 while [ $i -le $b ]
 do
   echo Message Number: $i was send.
